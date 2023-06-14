@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

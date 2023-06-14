@@ -1,0 +1,55 @@
+:root {
+  --numbers-fs: 3.2rem;
+  --del-reset-res-fs: hsl(0, 0%, 100%);
+  
+  /* theme 1 */
+
+  --t1-main-bg: hsl(222, 26%, 31%);
+  --t1-calculator-bg: hsl(223, 31%, 20%);
+  --t1-screen-bg: hsl(224, 36%, 15%);
+
+  --t1-del-reset-bg: hsl(225, 21%, 49%);
+  --t1-key-shadow: hsl(224, 28%, 35%);
+
+  --t1-res: hsl(6, 63%, 50%);
+  --t1-res-shadow: hsl(6, 70%, 34%);
+
+  --t1-key-numbers-bg: hsl(30, 25%, 89%);
+  --t1-key-numbers-shadow: hsl(28, 16%, 65%);
+
+  --t1-numbers-fs: hsl(221, 14%, 31%);
+
+  /* theme 2 */
+
+  --t2-main-bg: hsl(0, 0%, 90%);
+  --t2-calculator-bg: hsl(0, 5%, 81%);
+  --t2-screen-bg: hsl(0, 0%, 93%);
+
+  --t2-del-reset-bg: hsl(185, 42%, 37%);
+  --t2-key-shadow: hsl(185, 58%, 25%);
+
+  --t2-res: hsl(25, 98%, 40%);
+  --t2-res-shadow: hsl(25, 99%, 27%);
+
+  --t2-key-numbers-bg: hsl(45, 7%, 89%);
+  --t2-key-numbers-shadow: hsl(35, 11%, 61%);
+
+  --t2-numbers-fs: hsl(60, 10%, 19%);
+
+  /* theme 3 */
+
+  --t3-main-bg: hsl(268, 75%, 9%);
+  --t3-calculator-bg: hsl(268, 71%, 12%);
+
+  --t3-del-reset-bg: hsl(281, 89%, 26%);
+  --t3-key-shadow: hsl(285, 91%, 52%);
+
+  --t3-res: hsl(176, 100%, 44%);
+  --t3-res-shadow: hsl(177, 92%, 70%);
+
+  --t3-key-numbers-bg: hsl(268, 47%, 21%);
+  --t3-key-numbers-shadow: hsl(290, 70%, 36%);
+
+  --t3-numbers-fs: hsl(52, 100%, 62%);
+  --t3-res-fs: hsl(198, 20%, 13%);
+}
