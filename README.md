@@ -10,6 +10,7 @@ Calculadora de operações simples, contendo como opção a adição, subtraçã
 - Propriedades personalizadas de CSS3
 - JavaScript
 - Flexbox
+- Grid
 - Design responsivo
 
 ### ⌨ Funcionalidades

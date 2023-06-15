@@ -1,1 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+body {
+  background-color: var(--t1-main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: var(--numbers-fs);
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: var(t1-calculator-bg);
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  gap: 1.5rem;
+}
+
+.number-theme {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+  color: var(--del-reset-res-fs);
+  letter-spacing: 1rem;
+}
+
+.wrapper-themes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--del-reset-res-fs);
+  font-size: 1rem;
+}
+
+.wrapper-themes p {
+  font-size: 1.5rem;
+}
+
+.screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--t1-screen-bg);
+  min-height: 5rem;
+  border-radius: 0.5rem;
+  color: var(--del-reset-res-fs);
+}
+
+.barra {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--t1-screen-bg);
+  border-radius: 3rem;
+  width: 8rem;
+  height: 2rem;
+}
+
+.btn-theme {
+  border-radius: 50%;
+  background-color: var(--t1-res);
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-theme:hover {
+  background-color: var(--t1-res-shadow);
+}
+
+.wrapper-numbers {
+  width: 25rem;
+  background-color: var(--t1-calculator-bg);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.numbers {
+  background-color: var(--t1-key-numbers-bg);
+  color: var(--t1-numbers-fs);
+  height: 3rem;
+  border-radius: 0.6rem;
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-key-numbers-shadow);
+  cursor: pointer;
+}
+
+.res {
+  grid-column: span 2;
+  height: 3rem;
+  border-radius: 0.6rem;
+  color: var(--del-reset-res-fs);
+  background-color: var(--t1-res);
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-res-shadow);
+  cursor: pointer;
+}
+
+.reset {
+  background-color: var(--t1-del-reset-bg);
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-key-shadow);
+  color: var(--del-reset-res-fs);
+}

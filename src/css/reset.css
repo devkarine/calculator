@@ -10,7 +10,8 @@ html {
   font-family: "League Spartan", sans-serif;
 }
 
-a {
+button {
   text-decoration: none;
   color: inherit;
+  border: none;
 }
