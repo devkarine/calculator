@@ -13,6 +13,16 @@ body {
   
 }
 
+body.theme02{
+  background-color: var(--t2-main-bg);
+  color: var(--t2-numbers-fs);
+}
+
+body.theme03{
+  background-color: var(--t3-main-bg);
+  color: var(--t3-numbers-fs);
+}
+
 .calc {
   display: flex;
   flex-direction: column;
@@ -48,6 +58,16 @@ body {
   border-radius: 0.5rem;
 }
 
+.screen.theme02,
+.barra.theme02{
+  background-color: var(--t2-screen-bg);
+}
+
+.screen.theme03,
+.barra.theme03{
+  background-color: var(--t3-screen-bg);
+}
+
 .barra {
   background-color: var(--t1-screen-bg);
   display: flex;
@@ -66,8 +86,12 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-.btn-theme:hover {
-  background-color: var(--t1-res-shadow);
+.btn-theme.theme02{
+  background-color: var(--t2-res);
+}
+
+.btn-theme.theme03{
+  background-color: var(--t3-res);
 }
 
 .wrapper-numbers {
@@ -80,6 +104,14 @@ body {
   border-radius: 0.5rem;
 }
 
+.wrapper-numbers.theme02{
+  background-color: var(--t2-calculator-bg);
+}
+
+.wrapper-numbers.theme03{
+  background-color: var(--t3-calculator-bg);
+}
+
 .numbers {
   background-color: var(--t1-key-numbers-bg);
   color: var(--t1-numbers-fs);
@@ -87,6 +119,18 @@ body {
   height: 3rem;
   border-radius: 0.6rem;
   
+}
+
+.numbers.theme02 {
+  background-color: var(--t2-key-numbers-bg);
+  color: var(--t2-numbers-fs);
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t2-key-numbers-shadow);
+}
+
+.numbers.theme03 {
+  background-color: var(--t3-key-numbers-bg);
+  color: var(--t3-numbers-fs);
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t3-key-numbers-shadow);
 }
 
 .res {
@@ -97,11 +141,27 @@ body {
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-res-shadow);
 }
 
+.res.theme02{
+  background-color: var(--t2-res);
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t2-res-shadow);
+}
+
+.res.theme03{
+  background-color: var(--t3-res);
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t3-res-shadow);
+}
+
 .reset {
   background-color: var(--t1-del-reset-bg);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-key-shadow);
 }
 
-.screen.theme02{
-  background-color: red;
+.reset.theme02 {
+  background-color: var(--t2-del-reset-bg);
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t2-key-shadow);
+}
+
+.reset.theme03 {
+  background-color: var(--t3-del-reset-bg);
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t3-key-shadow);
 }
