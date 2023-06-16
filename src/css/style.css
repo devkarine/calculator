@@ -1,9 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+html {
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+}
+
 
 body {
-  background-color: var(--t1-main-bg);
-  font-size: var(--numbers-fs);
   color: var(--del-reset-res-fs);
+  font-size: var(--numbers-fs);
+  background-color: var(--t1-main-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +48,7 @@ body.theme03{
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
+  
 }
 
 .wrapper-themes p {
@@ -56,6 +63,11 @@ body.theme03{
   padding: 0.5rem;
   min-height: 5rem;
   border-radius: 0.5rem;
+  width: 25rem;
+}
+
+.screen span {
+  word-break: break-all;
 }
 
 .screen.theme02,
@@ -65,7 +77,7 @@ body.theme03{
 
 .screen.theme03,
 .barra.theme03{
-  background-color: var(--t3-screen-bg);
+  background-color: var(--t3-calculator-bg);
 }
 
 .barra {
@@ -118,7 +130,12 @@ body.theme03{
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-key-numbers-shadow);
   height: 3rem;
   border-radius: 0.6rem;
+  font-weight: 700;
   
+}
+
+.numbers:hover{
+  background-color: var(--t1-key-numbers-shadow);
 }
 
 .numbers.theme02 {
@@ -127,10 +144,18 @@ body.theme03{
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t2-key-numbers-shadow);
 }
 
+.numbers.theme02:hover{
+  background-color: var(--t2-key-numbers-shadow);
+}
+
 .numbers.theme03 {
   background-color: var(--t3-key-numbers-bg);
   color: var(--t3-numbers-fs);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t3-key-numbers-shadow);
+}
+
+.numbers.theme03:hover{
+  background-color: var(--t3-key-numbers-shadow);
 }
 
 .res {
@@ -141,9 +166,17 @@ body.theme03{
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-res-shadow);
 }
 
+.res:hover{
+  background-color: var(--t1-res-shadow);
+}
+
 .res.theme02{
   background-color: var(--t2-res);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t2-res-shadow);
+}
+
+.res.theme02:hover{
+  background-color: var(--t2-res-shadow);
 }
 
 .res.theme03{
@@ -151,9 +184,18 @@ body.theme03{
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t3-res-shadow);
 }
 
+.res.theme02:hover{
+  background-color: var(--t3-res-shadow);
+}
+
 .reset {
   background-color: var(--t1-del-reset-bg);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-key-shadow);
+  color: var(--del-reset-res-fs);
+}
+
+.reset:hover {
+  background-color: var(--t1-key-shadow);
 }
 
 .reset.theme02 {
@@ -161,7 +203,15 @@ body.theme03{
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t2-key-shadow);
 }
 
+.reset.theme02:hover {
+  background-color: var(--t2-key-shadow);
+}
+
 .reset.theme03 {
   background-color: var(--t3-del-reset-bg);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t3-key-shadow);
+}
+
+.reset.theme02:hover {
+  background-color: var(--t3-key-shadow);
 }
