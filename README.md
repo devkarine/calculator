@@ -1,4 +1,4 @@
-# 🖥️ Calculator - Em Construção
+# 🖥️ Calculator
 
 ## 📜 Descrição
 
