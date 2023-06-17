@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 
 html {
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
 }
 
-
 body {
-  color: var(--del-reset-res-fs);
   font-size: var(--numbers-fs);
-  background-color: var(--t1-main-bg);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   min-height: 100vh;
   max-width: 100%;
-  
+}
+body.theme01 {
+  background-color: var(--t1-main-bg);
+  color: var(--del-reset-res-fs);
 }
 
-body.theme02{
+body.theme02 {
   background-color: var(--t2-main-bg);
   color: var(--t2-numbers-fs);
 }
 
-body.theme03{
+body.theme03 {
   background-color: var(--t3-main-bg);
   color: var(--t3-numbers-fs);
 }
@@ -33,14 +33,19 @@ body.theme03{
   display: flex;
   flex-direction: column;
   max-width: 50rem;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
-.number-theme {
+.numbers-theme {
+  gap: 2rem;
   display: flex;
   justify-content: flex-end;
   font-size: 1rem;
-  letter-spacing: 1rem;
+  padding-right: 1rem;
+}
+
+.number-theme {
+  background-color: inherit;
 }
 
 .wrapper-themes {
@@ -48,67 +53,82 @@ body.theme03{
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
-  
 }
 
 .wrapper-themes p {
   font-size: 1.5rem;
 }
 
-.screen {
-  background-color: var(--t1-screen-bg);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0.5rem;
+#screen {
+  color: var(--del-reset-res-fs);
+  padding-left: 1rem;
   min-height: 5rem;
   border-radius: 0.5rem;
   width: 25rem;
 }
 
-.screen span {
-  word-break: break-all;
+body.theme01 #screen,
+body.theme01 .barra {
+  background-color: var(--t1-screen-bg);
 }
 
-.screen.theme02,
-.barra.theme02{
+body.theme02 #screen,
+body.theme02 .barra {
+  color: var(--t2-numbers-fs);
   background-color: var(--t2-screen-bg);
 }
 
-.screen.theme03,
-.barra.theme03{
+body.theme03 #screen,
+body.theme03 .barra {
   background-color: var(--t3-calculator-bg);
 }
 
 .barra {
   background-color: var(--t1-screen-bg);
   display: flex;
-  justify-content: space-around;
   align-items: center;
   border-radius: 3rem;
   width: 8rem;
   height: 2rem;
+  padding: 0.9rem;
+}
+
+body.theme01 .barra {
+  display: flex;
+  justify-content: flex-start;
+}
+
+body.theme02 .barra {
+  display: flex;
+  justify-content: center;
+}
+
+body.theme03 .barra {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .btn-theme {
-  background-color: var(--t1-res);
   border-radius: 50%;
   width: 1rem;
   height: 1rem;
   transition: 0.2s ease-in-out;
 }
 
-.btn-theme.theme02{
+body.theme01 .btn-theme {
+  background-color: var(--t1-res);
+}
+
+body.theme02 .btn-theme {
   background-color: var(--t2-res);
 }
 
-.btn-theme.theme03{
+body.theme03 .btn-theme {
   background-color: var(--t3-res);
 }
 
 .wrapper-numbers {
   width: 25rem;
-  background-color: var(--t1-calculator-bg);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
@@ -116,45 +136,55 @@ body.theme03{
   border-radius: 0.5rem;
 }
 
-.wrapper-numbers.theme02{
+body.theme01 .wrapper-numbers {
+  background-color: var(--t1-calculator-bg);
+}
+
+body.theme02 .wrapper-numbers {
   background-color: var(--t2-calculator-bg);
 }
 
-.wrapper-numbers.theme03{
+body.theme03 .wrapper-numbers {
   background-color: var(--t3-calculator-bg);
 }
 
 .numbers {
-  background-color: var(--t1-key-numbers-bg);
-  color: var(--t1-numbers-fs);
-  box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-key-numbers-shadow);
   height: 3rem;
   border-radius: 0.6rem;
   font-weight: 700;
-  
 }
 
-.numbers:hover{
+.numbers:hover {
   background-color: var(--t1-key-numbers-shadow);
 }
 
-.numbers.theme02 {
+body.theme01 .numbers {
+  background-color: var(--t1-key-numbers-bg);
+  color: var(--t1-numbers-fs);
+  box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-key-numbers-shadow);
+}
+
+body.theme01 .numbers:hover {
+  background-color: var(--t1-key-numbers-shadow);
+}
+
+body.theme02 .numbers {
   background-color: var(--t2-key-numbers-bg);
   color: var(--t2-numbers-fs);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t2-key-numbers-shadow);
 }
 
-.numbers.theme02:hover{
+body.theme02 .numbers:hover {
   background-color: var(--t2-key-numbers-shadow);
 }
 
-.numbers.theme03 {
+body.theme03 .numbers {
   background-color: var(--t3-key-numbers-bg);
   color: var(--t3-numbers-fs);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t3-key-numbers-shadow);
 }
 
-.numbers.theme03:hover{
+body.theme03 .numbers:hover {
   background-color: var(--t3-key-numbers-shadow);
 }
 
@@ -162,56 +192,63 @@ body.theme03{
   grid-column: span 2;
   height: 3rem;
   border-radius: 0.6rem;
+}
+
+body.theme01 .res {
   background-color: var(--t1-res);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-res-shadow);
 }
 
-.res:hover{
+body.theme01 .res:hover {
   background-color: var(--t1-res-shadow);
 }
 
-.res.theme02{
+body.theme02 .res {
+  color: var(--del-reset-res-fs);
   background-color: var(--t2-res);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t2-res-shadow);
 }
 
-.res.theme02:hover{
+body.theme02 .res:hover {
   background-color: var(--t2-res-shadow);
 }
 
-.res.theme03{
+body.theme03 .res {
+  color: var(--del-reset-res-fs);
   background-color: var(--t3-res);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t3-res-shadow);
 }
 
-.res.theme02:hover{
+body.theme03 .res:hover {
   background-color: var(--t3-res-shadow);
 }
 
-.reset {
+body.theme01 .reset {
   background-color: var(--t1-del-reset-bg);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t1-key-shadow);
   color: var(--del-reset-res-fs);
 }
 
-.reset:hover {
+body.theme01 .reset:hover {
   background-color: var(--t1-key-shadow);
 }
 
-.reset.theme02 {
+body.theme02 .reset {
+  color: var(--del-reset-res-fs);
   background-color: var(--t2-del-reset-bg);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t2-key-shadow);
 }
 
-.reset.theme02:hover {
+body.theme02 .reset:hover {
   background-color: var(--t2-key-shadow);
 }
 
-.reset.theme03 {
+body.theme03 .reset {
+  color: var(--del-reset-res-fs);
   background-color: var(--t3-del-reset-bg);
   box-shadow: 0.2rem 0.2rem 0.1rem var(--t3-key-shadow);
 }
 
-.reset.theme02:hover {
+body.theme03 .reset:hover {
   background-color: var(--t3-key-shadow);
 }

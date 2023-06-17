@@ -8,47 +8,49 @@
     <link rel="stylesheet" href="src/css/style.css" />
     <title>Calculator</title>
   </head>
-  <body>
+  <body class="theme01">
     <section class="calc">
-      <div class="number-theme">1 2 3</div>
+      <div class="numbers-theme">
+        <button class="number-theme" id="t1">1</button>
+        <button class="number-theme" id="t2">2</button>
+        <button class="number-theme" id="t3">3</button>
+      </div>
       <div class="themes">
         <div class="wrapper-themes">
           <p>calc</p>
           <small>THEME</small>
           <div class="barra">
-            <button class="btn-theme"></button>
-            <button class="btn-theme"></button>
-            <button class="btn-theme"></button>
+            <div id="circle" class="btn-theme"></div>
           </div>
         </div>
       </div>
       <div class="screen">
-        <span>399.981</span>
+        <input disabled type="text" id="screen" />
       </div>
 
       <div class="wrapper-numbers">
-        <button class="numbers">7</button>
-        <button class="numbers">8</button>
-        <button class="numbers">9</button>
-        <button class="numbers reset">DEL</button>
+        <button onclick="insertScreen('7')" class="numbers">7</button>
+        <button onclick="insertScreen('8')" class="numbers">8</button>
+        <button onclick="insertScreen('9')" class="numbers">9</button>
+        <button class="numbers reset" id="del">DEL</button>
 
-        <button class="numbers">4</button>
-        <button class="numbers">5</button>
-        <button class="numbers">6</button>
-        <button class="numbers">+</button>
+        <button onclick="insertScreen('4')" class="numbers">4</button>
+        <button onclick="insertScreen('5')" class="numbers">5</button>
+        <button onclick="insertScreen('6')" class="numbers">6</button>
+        <button onclick="insertScreen('+')" class="numbers">+</button>
 
-        <button class="numbers">1</button>
-        <button class="numbers">2</button>
-        <button class="numbers">3</button>
-        <button class="numbers">-</button>
+        <button onclick="insertScreen('1')" class="numbers">1</button>
+        <button onclick="insertScreen('2')" class="numbers">2</button>
+        <button onclick="insertScreen('3')" class="numbers">3</button>
+        <button onclick="insertScreen('-')" class="numbers">-</button>
 
-        <button class="numbers">.</button>
-        <button class="numbers">0</button>
-        <button class="numbers">/</button>
-        <button class="numbers">x</button>
+        <button onclick="insertScreen('.')" class="numbers">.</button>
+        <button onclick="insertScreen('0')" class="numbers">0</button>
+        <button onclick="insertScreen('/')" class="numbers">/</button>
+        <button onclick="insertScreen('*')" class="numbers">x</button>
 
-        <button class="res reset">RESET</button>
-        <button class="res">RES</button>
+        <button class="res reset" id="reset">RESET</button>
+        <button class="res" id="res">=</button>
       </div>
     </section>
 

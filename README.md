@@ -15,13 +15,14 @@ Calculadora de operações simples, contendo como opção a adição, subtraçã
 
 ### ⌨ Funcionalidades
 
-- Escolha de três temas de cores, movendo a bolinha, utilizando js.
-- Operações matemáticas de adição, subtração, multiplicação e divisão, utilizando js.
-- Botão reset para limpar a operação, utilizando js.
+- Escolha de três temas de cores, clicando no número e a bolinha irá mostrar qual número está o tema atual;
+- Operações matemáticas de adição, subtração, multiplicação e divisão;
+- Botão reset para limpar a operação;
+- Botão del para limpar número por número.
 
 ## 🖱️ A página
 
-<img src="src/img/mobile.gif" alt="Gif exibindo uma demonstração do site">
+<img src="src/img/gif.gif" alt="Gif exibindo uma demonstração do site">
 
 > <a href="https://devkarine.github.io/calculator/" target= "_blank">Acesse a página online</a>
 
