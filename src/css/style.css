@@ -130,7 +130,7 @@ body.theme03 .btn-theme {
 .wrapper-numbers {
   width: 25rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
