@@ -4,22 +4,20 @@ const res = document.getElementById("res");
 const two = document.getElementById("t2");
 const three = document.getElementById("t3");
 const one = document.getElementById("t1");
+const body = document.querySelector("body");
 
 two.addEventListener("click", () => {
-  const body = document.querySelector("body");
   body.classList.add("theme02");
   body.classList.remove("theme03");
   body.classList.remove("theme01");
 });
 
 three.addEventListener("click", () => {
-  const body = document.querySelector("body");
   body.classList.add("theme03");
   body.classList.remove("theme02");
 });
 
 one.addEventListener("click", () => {
-  const body = document.querySelector("body");
   body.classList.remove("theme02");
   body.classList.remove("theme03");
   body.classList.add("theme01");

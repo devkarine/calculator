@@ -59,30 +59,6 @@ body.theme03 {
   font-size: 1.5rem;
 }
 
-#screen {
-  color: var(--del-reset-res-fs);
-  padding-left: 1rem;
-  min-height: 5rem;
-  border-radius: 0.5rem;
-  width: 25rem;
-}
-
-body.theme01 #screen,
-body.theme01 .barra {
-  background-color: var(--t1-screen-bg);
-}
-
-body.theme02 #screen,
-body.theme02 .barra {
-  color: var(--t2-numbers-fs);
-  background-color: var(--t2-screen-bg);
-}
-
-body.theme03 #screen,
-body.theme03 .barra {
-  background-color: var(--t3-calculator-bg);
-}
-
 .barra {
   background-color: var(--t1-screen-bg);
   display: flex;
@@ -125,6 +101,30 @@ body.theme02 .btn-theme {
 
 body.theme03 .btn-theme {
   background-color: var(--t3-res);
+}
+
+#screen {
+  color: var(--del-reset-res-fs);
+  padding-left: 1rem;
+  min-height: 5rem;
+  border-radius: 0.5rem;
+  width: 25rem;
+}
+
+body.theme01 #screen,
+body.theme01 .barra {
+  background-color: var(--t1-screen-bg);
+}
+
+body.theme02 #screen,
+body.theme02 .barra {
+  color: var(--t2-numbers-fs);
+  background-color: var(--t2-screen-bg);
+}
+
+body.theme03 #screen,
+body.theme03 .barra {
+  background-color: var(--t3-calculator-bg);
 }
 
 .wrapper-numbers {
