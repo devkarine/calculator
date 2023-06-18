@@ -32,6 +32,10 @@ function insertScreen(num) {
 res.addEventListener("click", () => {
   const input = document.getElementById("screen").value;
   document.getElementById("screen").value = eval(input);
+
+  if(input == ""){
+    document.getElementById("screen").value = ""
+  }
 });
 
 reset.addEventListener("click", () => {
